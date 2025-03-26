@@ -1,9 +1,21 @@
 ################## 系统配置 ##################
 
+# 启用更新检查
+check_update: true
+
+# 启动文章内图片点击放大功能
+viewerjs: true
+
+# 搜索
 search:
-  includes:
+  provider: local # 可选 local / external / none
+  includes:       # 搜索包含的内容
     - post
     - page
+  content: true   # 是否搜索文章内容
+
+# 公式支持
+# mathjax: true
 
 ################## 样式配置 ##################
 
